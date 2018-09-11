@@ -1,0 +1,47 @@
+.large-hero {
+  margin-top: 52px;
+  background-color: #000;
+  position: relative;
+  /* z-index: -1; */
+
+  &__img {
+    opacity: 0.3;
+    width: 100%;
+  }
+
+  &__text-content {
+    position: absolute;
+    top: 30%;
+    left: calc(50%);
+    transform: translateX(-50%);
+    color: white;
+    text-align: center;
+
+    @mixin atMedium {
+      position: absolute;
+      top: 50%;
+      left: calc(50% + 70px);
+      transform: translateY(-50%);
+      color: white;
+      text-align: center;
+    }
+  }
+
+  &__title {
+    font-family: "Abril Fatface", cursive;
+    font-size: 2em;
+    font-weight: 100;
+
+    @mixin atLarge {
+      font-size: 3.5em;
+    }
+  }
+
+  &__subtitle {
+    font-weight: 100;
+    font-size: 1em;
+    @mixin atLarge {
+      font-size: 1.5em;
+    }
+  }
+}

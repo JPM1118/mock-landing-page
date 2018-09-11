@@ -1,0 +1,42 @@
+.site-header {
+  position: fixed;
+  background-color: #f2f28c;
+  z-index: 10;
+  top: 0;
+  width: 100%;
+
+  @mixin atMedium {
+    background: #f2f28c;
+
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 52px;
+    z-index: 10;
+  }
+
+  img {
+    position: relative;
+    top: 1px;
+    left: auto;
+  }
+
+  &__menu-icon {
+    float: right;
+    margin-top: 17px;
+    font-size: 1.2em;
+    cursor: pointer;
+    visibility: visible;
+
+    @mixin atMedium {
+      visibility: hidden;
+    }
+  }
+
+  &__close-menu {
+    float: right;
+    margin-top: 17px;
+    font-size: 1.2em;
+    cursor: pointer;
+  }
+}

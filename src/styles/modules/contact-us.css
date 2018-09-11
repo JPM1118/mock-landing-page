@@ -1,0 +1,25 @@
+.contact-us {
+  text-align: center;
+  h1 {
+    padding-bottom: 60px;
+  }
+
+  &__button {
+    margin: 10px;
+    padding: 5px 35px;
+    text-decoration: none;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    transform: scale(1);
+    transition: all 0.3s ease-in-out;
+
+    &:hover {
+      transform: scale(1.2);
+    }
+  }
+
+  &__text {
+    padding: 5px;
+  }
+}

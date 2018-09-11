@@ -1,0 +1,47 @@
+.pricing {
+  background-color: $lightgrey;
+
+  h1 {
+    text-align: center;
+    padding-bottom: 60px;
+  }
+  &__container {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    text-align: center;
+  }
+
+  &__tier-box {
+    border: 2px black solid;
+    border-radius: 5px;
+    padding: 20px;
+    background-color: white;
+    margin-right: 0px;
+    margin-bottom: 60px;
+    @mixin atSmall {
+      margin-right: 30px;
+    }
+
+    h2 {
+      margin: -20px -20px 20px -20px;
+      padding: 20px;
+      background-color: $lightgrey;
+      border-bottom: black solid 1px;
+    }
+
+    button {
+      padding: 5px 35px;
+      cursor: pointer;
+      border: none;
+      text-decoration: none;
+      outline: none;
+      transform: scale(1);
+      transition: all 0.3s ease-in-out;
+
+      &:hover {
+        transform: scale(1.2);
+      }
+    }
+  }
+}

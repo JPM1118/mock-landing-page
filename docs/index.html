@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Mock Landing Page</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Barlow|Roboto|Abril+Fatface">
+</head>
+
+<body>
+  <header class="site-header" id="header">
+    <div class="wrapper">
+      <img id="header-img" src="img/basket-icon.jpg" alt="basket icon">
+      <a class="site-header__menu-icon" id="hamburger">&#9776;</a>
+      <span class="site-header__close-menu hidden">X</span>
+      <nav class="primary-nav hidden">
+        <ul>
+          <li>
+            <a class="links" href="#home">Home</a>
+          </li>
+          <li>
+            <a class="links" href="#our-story">Our Story</a>
+          </li>
+          <li>
+            <a class="links" href="#pricing">Pricing</a>
+          </li>
+          <li>
+            <a class="links" href="#contact-us">Contact Us</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <div class="large-hero" id="home">
+      <picture>
+        <source srcset="img/basket-landscape-large.jpg" media="(min-width: 1300px)">
+        <source srcset="img/basket-landscape-med.jpg" media="(min-width: 1000px)">
+        <source srcset="img/basket-landscape-small.jpg" media="(min-width: 556px)">
+        <img srcset="img/basket-landscape-smallest.jpg" alt="Basket Landscape" class="large-hero__img">
+      </picture>
+      <div class="large-hero__text-content">
+        <h1 class="large-hero__title">Danny's Disc Golf</h1>
+        <p class="large-hero__subtitle">We do our best to improve your game.</p>
+      </div>
+    </div>
+
+    <div class="video padding-bottom">
+      <div class="wrapper wrapper--top">
+        <h1>With our program, one day you will do this...</h1>
+        <div class="video__iframe-container">
+          <iframe class="video__iframe" src="https://www.youtube.com/embed/c0av5hOd71A" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+        </div>
+      </div>
+    </div>
+    <div class="our-story padding-bottom" id="our-story">
+      <div class="wrapper wrapper--top wrapper--small">
+        <h1>Our Story</h1>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris lobortis leo quis sapien aliquet tincidunt. Nullam tristique
+          mauris et arcu dapibus, eu varius ligula imperdiet. Nunc in ante nulla. Maecenas ac turpis eget justo sagittis
+          aliquam sed at sem. Vestibulum libero est, euismod quis lacus in, malesuada convallis nunc. Vestibulum vestibulum
+          in nunc vel lacinia. Praesent dictum aliquet massa et varius. Suspendisse lacinia vulputate magna, in ullamcorper
+          ante dignissim in. Quisque lacus augue, hendrerit at porttitor ac, dictum sed est. Aenean molestie porttitor egestas.
+          Etiam eget urna ac nisl suscipit tincidunt. Aenean pharetra molestie odio, vitae rutrum risus malesuada malesuada.
+          In tristique augue in mauris scelerisque posuere. Phasellus at lobortis turpis, vel luctus tellus.
+        </p>
+      </div>
+    </div>
+    <div class="pricing padding-bottom" id="pricing">
+      <div class="wrapper wrapper--top">
+        <h1>Pricing</h1>
+        <div class='pricing__container'>
+          <div id="tier1" class="pricing__tier-box">
+            <h2 style="background-color: red">Red Tee Package</h2>
+            <p>Lorem ipsum dolor sit amet</p>
+            <p>Lorem ipsum dolor sit amet</p>
+            <p>Lorem ipsum dolor sit amet</p>
+            <button>select</button>
+          </div>
+          <div id="tier2" class="pricing__tier-box">
+            <h2 style="background-color: white">White Tee Package</h2>
+            <p>Lorem ipsum dolor sit amet</p>
+            <p>Lorem ipsum dolor sit amet</p>
+            <p>Lorem ipsum dolor sit amet</p>
+            <button>select</button>
+          </div>
+          <div id="tier3" class="pricing__tier-box">
+            <h2 style="background-color: blue">Blue Tee Package</h2>
+            <p>Lorem ipsum dolor sit amet</p>
+            <p>Lorem ipsum dolor sit amet</p>
+            <p>Lorem ipsum dolor sit amet</p>
+            <button>select</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="contact-us padding-bottom" id="contact-us">
+      <div class="wrapper wrapper--top">
+        <h1>Contact Us</h1>
+        <form action="#" method="post">
+          <p>For more information about our services, provide us your email. One of our instructors will get right back to
+            you.
+          </p>
+          <label for="email"> Email: </label>
+          <input type="email" name="email" placeholder="Enter your email address here" size="25" required class="contact-us__text">
+          <div>
+            <input type='submit' value="Send" name="email" class="contact-us__button">
+          </div>
+        </form>
+      </div>
+    </div>
+
+  </main>
+<script type="text/javascript" src="app.bundle.js"></script></body>
+<footer></footer>
+
+
+</html>
